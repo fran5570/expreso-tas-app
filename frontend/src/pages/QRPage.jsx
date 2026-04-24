@@ -15,7 +15,7 @@ function QRPage() {
       }}
     >
       <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>
-        🚛 Expreso TAS
+        Expreso TAS
       </h1>
 
       <p style={{ marginBottom: "20px", color: "#ccc" }}>
