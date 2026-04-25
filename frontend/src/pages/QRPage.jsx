@@ -35,7 +35,7 @@ function QRPage() {
         }}
       >
         <QRCodeCanvas
-          value="http://192.168.101.14:5173/sucursales"
+          value="https://expreso-tas-app.vercel.app/sucursales"
           size={220}
         />
       </div>
