@@ -21,38 +21,38 @@ function Sucursales() {
 
   // PDF
   const descargarPDF = () => {
-  const pdf = new jsPDF();
+    const pdf = new jsPDF();
 
-  // TÍTULO
-  pdf.setFontSize(18);
-  pdf.text("Expreso TAS - Sucursales", 10, 15);
+    // TÍTULO
+    pdf.setFontSize(18);
+    pdf.text("Expreso TAS - Sucursales", 10, 15);
 
-  let y = 25;
+    let y = 25;
 
-  filtered.forEach((s) => {
-    // NOMBRE
-    pdf.setFontSize(14);
-    pdf.text(s.nombre, 10, y);
-    y += 6;
+    filtered.forEach((s) => {
+      // NOMBRE
+      pdf.setFontSize(14);
+      pdf.text(s.nombre, 10, y);
+      y += 6;
 
-    // DIRECCIÓN
-    pdf.setFontSize(11);
-    pdf.text(s.direccion, 10, y);
-    y += 6;
+      // DIRECCIÓN
+      pdf.setFontSize(11);
+      pdf.text(s.direccion, 10, y);
+      y += 6;
 
-    // TELÉFONO
-    pdf.text(`Tel: ${s.telefono}`, 10, y);
-    y += 10;
+      // TELÉFONO
+      pdf.text(`Tel: ${s.telefono}`, 10, y);
+      y += 10;
 
-    // SALTO DE PÁGINA
-    if (y > 280) {
-      pdf.addPage();
-      y = 15;
-    }
-  });
+      // SALTO DE PÁGINA
+      if (y > 280) {
+        pdf.addPage();
+        y = 15;
+      }
+    });
 
-  pdf.save("sucursales-expreso-tas.pdf");
-};
+    pdf.save("sucursales-expreso-tas.pdf");
+  };
 
   return (
     <div
@@ -174,8 +174,8 @@ function Sucursales() {
                   </a>
 
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      s.direccion
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+                      s.direccion + ", " + s.nombre + ", Buenos Aires, Argentina"
                     )}`}
                     target="_blank"
                     rel="noreferrer"
