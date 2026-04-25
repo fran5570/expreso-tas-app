@@ -9,7 +9,12 @@ function QRPage() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(to bottom, #0f172a, #111827)",
+        backgroundImage: `
+  linear-gradient(rgba(15, 23, 42, 0.95), rgba(17, 24, 39, 0.95)),
+  url('/WhatsApp Image 2026-04-25 at 16.23.14.jpeg')
+`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "125px",
         color: "white",
         textAlign: "center",
       }}

@@ -58,7 +58,12 @@ function Sucursales() {
     <div
       style={{
         minHeight: "100vh",
-        background: "#0f172a",
+        backgroundImage: `
+  linear-gradient(rgba(15, 23, 42, 0.80), rgba(17, 24, 39, 0.80)),
+  url('/WhatsApp Image 2026-04-25 at 16.23.14.jpeg')
+`,
+backgroundRepeat: "repeat",
+backgroundSize: "100px",
         color: "white",
         padding: "20px",
       }}
