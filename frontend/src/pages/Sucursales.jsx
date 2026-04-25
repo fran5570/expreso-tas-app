@@ -6,7 +6,7 @@ function Sucursales() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://192.168.101.14:8000/sucursales")
+    fetch("https://expreso-tas-app.onrender.com/sucursales")
       .then((res) => res.json())
       .then((data) => setSucursales(data))
       .catch((err) => console.error(err));
