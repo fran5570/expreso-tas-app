@@ -13,13 +13,13 @@ app.add_middleware(
 )
 
 sucursales = [
-    {"id": 1, "nombre": "Gonzalez Chavez", "direccion": "Av. Perón 477", "telefono": "02983-15648248"},
+    {"id": 1, "nombre": "Adolfo Gonzalez Chaves", "direccion": "Av. pte. Perón 477", "telefono": "02983-15648248"},
     {"id": 2, "nombre": "Ayacucho", "direccion": "Yrigoyen 864", "telefono": "02293-15583656"},
     {"id": 3, "nombre": "Azul", "direccion": "Av. Mitre 242", "telefono": "02281-423318"},
     {"id": 4, "nombre": "Bahía Blanca", "direccion": "Ruta 3 km 696", "telefono": "0291-4846026"},
-    {"id": 5, "nombre": "Balcarce", "direccion": "Calle 20 y 30", "telefono": "02266-421597"},
+    {"id": 5, "nombre": "Balcarce", "direccion": "av jose de san martin calle 109 & 111", "telefono": "02266-421597"},
     {"id": 6, "nombre": "Benito Juarez", "direccion": "Av. Constitución 315", "telefono": "02281-406000/02"},
-    {"id": 7, "nombre": "Bolívar", "direccion": "F. García y Las Heras", "telefono": "02314-420300"},
+    {"id": 7, "nombre": "Bolívar", "direccion": "Fabres García & Las Heras", "telefono": "02314-420300"},
     {"id": 8, "nombre": "Buenos Aires", "direccion": "J. Rabanal 3159", "telefono": "011-49180428"},
     {"id": 9, "nombre": "Chillar", "direccion": "Est. Serv. Los Cerros Ruta 3", "telefono": "02281-497185"},
     {"id": 10, "nombre": "Chivilcoy", "direccion": "Av. 22 de Octubre 420", "telefono": "02346-421548"},
