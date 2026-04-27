@@ -19,7 +19,7 @@ function QRPage() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "50px", marginBottom: "10px" }}>
+      <h1 style={{ fontSize: "50px", marginBottom: "40px" }}>
         Expreso TAS
       </h1>
 
