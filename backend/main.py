@@ -26,7 +26,7 @@ sucursales = [
     {"id": 11, "nombre": "Cnel. Pringles", "direccion": "Sáenz Peña 843", "telefono": "02922-462721"},
     {"id": 12, "nombre": "Cnel. Suarez", "direccion": "Av. San Martín 178", "telefono": "02926-431535"},
     {"id": 13, "nombre": "Gral. Lamadrid", "direccion": "Belgrano 962", "telefono": "02286-471069"},
-    {"id": 14, "nombre": "Junín", "direccion": "Avellaneda y Marcilia", "telefono": "0236-4425690"},
+    {"id": 14, "nombre": "Junín", "direccion": "Avellaneda 966", "telefono": "0236-4425690"},
     {"id": 15, "nombre": "La Plata", "direccion": "Av. 19 Nº 38", "telefono": "0221-4897345"},
     {"id": 16, "nombre": "Mar del Plata", "direccion": "Av. J.B. Justo 3953", "telefono": "0223-4731793"},
     {"id": 17, "nombre": "Necochea", "direccion": "Calle 72 Nº 2772", "telefono": "02262-436253"},
