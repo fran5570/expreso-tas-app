@@ -1,6 +1,24 @@
+import sqlite3
 from fastapi import FastAPI
 
 app = FastAPI()
+
+def init_db():
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS visitas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    conn.commit()
+    conn.close()
+
+init_db()
+
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -49,3 +67,28 @@ def home():
 @app.get("/sucursales")
 def get_sucursales():
     return sucursales
+
+@app.post("/visita")
+def registrar_visita():
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+
+    cursor.execute("INSERT INTO visitas DEFAULT VALUES")
+
+    conn.commit()
+    conn.close()
+
+    return {"mensaje": "ok"}
+
+
+@app.get("/visita")
+def obtener_visitas():
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) FROM visitas")
+    total = cursor.fetchone()[0]
+
+    conn.close()
+
+    return {"total": total}

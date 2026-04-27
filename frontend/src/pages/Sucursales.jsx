@@ -10,7 +10,13 @@ function Sucursales() {
       .then((res) => res.json())
       .then((data) => setSucursales(data))
       .catch((err) => console.error(err));
+
+    fetch("https://expreso-tas-app.onrender.com/visita", {
+    method: "POST",
+  });
   }, []);
+
+    
 
   // FILTRO
   const filtered = sucursales.filter((s) =>
