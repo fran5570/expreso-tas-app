@@ -19,11 +19,11 @@ function QRPage() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>
+      <h1 style={{ fontSize: "50px", marginBottom: "10px" }}>
         Expreso TAS
       </h1>
 
-      <p style={{ marginBottom: "30px", color: "#ccc" }}>
+      <p style={{ marginBottom: "40px", color: "#ccc" }}>
         Escaneá el QR para ver nuestras sucursales
       </p>
 
@@ -40,7 +40,7 @@ function QRPage() {
         />
       </div>
 
-      <p style={{ marginTop: "25px", fontSize: "14px", color: "#aaa" }}>
+      <p style={{ marginTop: "25px", fontSize: "28px", color: "#aaa" }}>
         Servicio de logística
       </p>
     </div>
