@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { jsPDF } from "jspdf";
+import { FaFacebookF } from "react-icons/fa";
 
 function Sucursales() {
   const [sucursales, setSucursales] = useState([]);
@@ -74,7 +75,11 @@ backgroundSize: "100px",
         padding: "20px",
       }}
     >
-      <h1 style={{ textAlign: "center", fontSize: "32px" }}>
+      <h1 style={{  textAlign: "center",
+    fontSize: "clamp(30px, 6vw, 48px)",
+    fontWeight: "900",
+    letterSpacing: "3px",
+    fontFamily: "Poppins, sans-serif",}}>
         Expreso TAS
       </h1>
 
@@ -207,6 +212,43 @@ backgroundSize: "100px",
           })}
         </div>
       </div>
+
+      <div
+  style={{
+    marginTop: "50px",
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <a
+    href="https://www.facebook.com/share/1DYq8AKkpA/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      width: "50px",
+      height: "50px",
+      borderRadius: "50%",
+      backgroundColor: "rgba(255,255,255,0.05)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "#9ca3af", // 👈 gris elegante
+      fontSize: "20px",
+      textDecoration: "none",
+      transition: "0.3s",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.backgroundColor = "#1877f2";
+      e.currentTarget.style.color = "#fff";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)";
+      e.currentTarget.style.color = "#9ca3af";
+    }}
+  >
+    <FaFacebookF />
+  </a>
+</div>
 
       {/* FOOTER */}
       <div
