@@ -1,7 +1,7 @@
 {
   "name": "Expreso TAS",
   "short_name": "Expreso TAS",
-  "start_url": "/",
+  "start_url": "/sucursales",
   "display": "standalone",
   "background_color": "#0a1a2f",
   "theme_color": "#0a1a2f"
